@@ -2,3 +2,18 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+train_inputs:
+  type: pickle.PickleDataSet
+  filepath: data/03_primary/train_inputs.pkl
+
+train_labels:
+  type: pickle.PickleDataSet
+  filepath: data/03_primary/train_labels.pkl
+
+test_inputs:
+  type: pickle.PickleDataSet
+  filepath: data/03_primary/test_inputs.pkl
+
+test_labels:
+  type: pickle.PickleDataSet
+  filepath: data/03_primary/test_labels.pkl
