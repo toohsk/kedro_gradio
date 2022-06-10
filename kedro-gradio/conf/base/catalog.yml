@@ -17,3 +17,8 @@ test_inputs:
 test_labels:
   type: pickle.PickleDataSet
   filepath: data/03_primary/test_labels.pkl
+
+trained_model:
+  type: pickle.PickleDataSet
+  filepath: data/06_models/dnn.pickle
+  versioned: true
