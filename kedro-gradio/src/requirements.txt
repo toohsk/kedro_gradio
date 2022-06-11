@@ -12,3 +12,4 @@ pytest-mock>=1.7.1, <2.0
 pytest~=6.2
 # requirement package for this project
 tensorflow==2.9.1
+kedro[tensorflow]==0.18.1
