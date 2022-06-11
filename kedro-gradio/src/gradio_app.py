@@ -1,14 +1,12 @@
-import pickle
-
 import gradio as gr
+import tensorflow as tf
 
 from kedro_gradio.pipelines.data_processing.nodes import preprocess_mnist
 
 
-model = None
-model_fp = '../data/06_models/dnn.pickle/2022-06-08T11.27.40.986Z/dnn.pickle'
-with open(model_fp, 'rb') as f:
-    model = pickle.load(f)
+# Change the file path to specific path.
+model_fp = '../data/06_models/dnn.h5/2022-06-11T06.49.02.453Z/dnn.h5'
+model = tf.keras.models.load_model(model_fp)
 
 lables = [i for i in range(10)]
 
